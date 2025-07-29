@@ -1,0 +1,40 @@
+{
+  "name": "hyper-suite",
+  "description": "A collection of libraries for hyperapp to make a full framework.",
+  "author": "Brian Teague <br.teague@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-Teague/hyper-suite.git"
+  },
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "ava",
+    "coverage": "c8 ava",
+    "build": "tsup index.js --format cjs,esm"
+  },
+  "keywords": [
+    "hyperapp",
+    "css-in-js",
+    "styled-components",
+    "ssr"
+  ],
+  "dependencies": {
+    "hyper-styled": "^1.2.0",
+    "hyperapp": "^2.0.22",
+    "hyperapp-render": "^4.0.1",
+    "hyperlit": "^0.3.6"
+  },
+  "devDependencies": {
+    "ava": "^6.4.1",
+    "c8": "^10.1.3",
+    "jsdom": "^26.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
