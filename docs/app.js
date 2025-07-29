@@ -2,7 +2,7 @@ import {
   html,
   styled,
   globalCss
-} from '../dist/index.js';
+} from './index.js';
 
 globalCss`
 @import "https://unpkg.com/water.css@2/out/light.min.css";
