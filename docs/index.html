@@ -1,14 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Calculator SSR</title>
-<style>@import "https://unpkg.com/water.css@2/out/light.min.css";body{display:grid;font-size:1.5em;place-items:center;height:100vh;}.hyper-2{display:grid;grid-template-columns:repeat(4, 1fr);gap:0.2em;font-size:1.5em;place-items:center;}.hyper-3{grid-column:span 4;box-sizing:border-box;width:100%;border:1px solid #ddd;border-radius:8px;font-size:2.5em;padding:0.2em 0.4em;text-align:right;gap:0.1em;}.hyper-4{grid-column:span 4;display:grid;grid-template-columns:repeat(4, 1fr);gap:0.1em;width:100%;box-sizing:border-box;}.hyper-5{background:lightgray;}.hyper-6{background:rgb(75, 150, 255);grid-column:-2;grid-row:2/span 4;}.hyper-7{grid-column:span 2;}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator SSR</title>
+  <style id="_hyper">
+    @import "https://unpkg.com/water.css@2/out/light.min.css";
+
+    body {
+      display: grid;
+      font-size: 1.5em;
+      place-items: center;
+      height: 100vh;
+    }
+
+    .hyper-2 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.2em;
+      font-size: 1.5em;
+      place-items: center;
+    }
+
+    .hyper-3 {
+      grid-column: span 4;
+      box-sizing: border-box;
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 2.5em;
+      padding: 0.2em 0.4em;
+      text-align: right;
+      gap: 0.1em;
+    }
+
+    .hyper-4 {
+      grid-column: span 4;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.1em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .hyper-5 {
+      background: lightgray;
+    }
+
+    .hyper-6 {
+      background: rgb(75, 150, 255);
+      grid-column: -2;
+      grid-row: 2/span 4;
+    }
+
+    .hyper-7 {
+      grid-column: span 2;
+    }
+  </style>
 </head>
+
 <body>
-  <div id="app"><main class="hyper-2"><div class="hyper-3">0</div><div class="hyper-4"><button class="hyper-5">+</button><button class="hyper-5">-</button><button class="hyper-5">×</button><button class="hyper-5">÷</button><button>7</button><button>8</button><button>9</button><button>4</button><button>5</button><button>6</button><button>1</button><button>2</button><button>3</button><button class="hyper-7">0</button><button>AC</button><button class="hyper-6">=</button></div></main></div>
+  <div id="app">
+    <main class="hyper-2">
+      <div class="hyper-3">0</div>
+      <div class="hyper-4"><button class="hyper-5">+</button><button class="hyper-5">-</button><button
+          class="hyper-5">×</button><button
+          class="hyper-5">÷</button><button>7</button><button>8</button><button>9</button><button>4</button><button>5</button><button>6</button><button>1</button><button>2</button><button>3</button><button
+          class="hyper-7">0</button><button>AC</button><button class="hyper-6">=</button></div>
+    </main>
+  </div>
   <script type="module" src="./main.js"></script>
 </body>
+
 </html>
